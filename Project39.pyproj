@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6069a47b-df81-4d2f-a181-8ad76b815816}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>predict.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="config.js" />
+    <Content Include="Screenshots\3.png" />
+    <Content Include="Screenshots\5.png" />
+    <Content Include="test\1.jpg" />
+    <Content Include="test\2.jpg" />
+    <Content Include="test\cAA662F.jpg" />
+    <Content Include="test\car3.jpg" />
+    <Content Include="test\car4.jpg" />
+    <Content Include="test\car5.jpg" />
+    <Content Include="test\car7.jpg" />
+    <Content Include="test\lLD9016.jpg" />
+    <Content Include="test\wA87271.jpg" />
+    <Content Include="test\wATH859.jpg" />
+    <Content Include="test\wAUB816.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="predict.py" />
+    <Compile Include="surface.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Screenshots" />
+    <Folder Include="test" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
